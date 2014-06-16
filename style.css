@@ -1,0 +1,100 @@
+.left
+{
+	width: 20%;
+	height: 5%;
+	text-align: left;
+	margin-top:2%;
+	margin-left: 20%;
+	float: left;
+	
+}
+.right
+{
+	width: 20%;
+	height: 5%;
+	text-align: left;
+	margin-top:2%;
+	margin-left: 10%;
+	float: left;
+	
+}
+.main
+{
+	width:100%;
+	height:100%;
+	color:black;
+	
+	
+	
+}
+
+
+.header
+{
+	width:100%;
+	height:10%;
+	border:solid;
+	background-color: black;
+	color: white;
+	
+}
+
+.bottem
+{
+	width:32.6%;
+	height:100%;
+	text-align: center;
+	float:left;
+	line-height: 40px;
+}
+
+.inside
+{
+width:70%;
+height:100%;
+border:solid;
+margin-left:10%;
+background-image:url("kagaya3.jpg");
+background-repeat:repeat-x;
+
+
+}
+.name
+{
+width:10%;
+height:5%
+float: bottom;
+}
+
+.signup
+{
+	width: 10%
+	height:5%;
+	
+	margin-top:2%;
+	margin-right: 50%;
+	float: right;
+}
+.reset
+{
+	width: 10%
+	height:5%;
+	
+	margin-top:1%;
+	margin-right: 50%;
+	float: right;
+}
+.signin
+{
+	
+	margin-bottom: 10%;
+	
+}
+.content
+{
+width:100%;
+height:75%;
+background-image:url("kagaya3.jpg");
+background-repeat:repeat-x;
+
+}
