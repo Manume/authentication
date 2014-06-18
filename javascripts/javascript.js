@@ -72,22 +72,21 @@ function space_validation()
 function Submit()
 {
 		var fname = document.getElementById("errorBox").value
-		var phone-no-validation = document.getElementById("phonenum").value
-		var phoneno = /^\d{10}$/;
+		var phone_num = document.getElementById("phonenum").value
+		
 	if( fname == "" )
    	{
-    	var x= document.getElementById("errorBox").focus() ;
-	 	document.getElementById("errorBox").value;
+    	document.getElementById("errorBox").focus() ;
+	 
    		alert("enter the first name");
     	 return false;
- 	  }
+ 	}
 
 
- 
-    
-  if(inputtxt.value.match(phoneno))  
+ 	  var phoneno_format = /^\d{10}$/;
+  if(phoneno_format.test(phone_num))  
   {  
-      return true;  
+      
   }  
   else  
   {  
@@ -95,4 +94,3 @@ function Submit()
      return false;  
   }  
 }  
-- See more at: http://www.w3resource.com/javascript/form/phone-no-validation.php#sthash.wcSGwQ9d.dpuf
