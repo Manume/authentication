@@ -1,11 +1,13 @@
 
+
 <html>
 	<head>
 		<title>Authentication | signup</title>
-		<link type="text/css" rel="stylesheet" href="style.css">
+		<link type="text/css" rel="stylesheet" href="stylesheets/style.css">
+		<script type="text/javascript" src="javascripts/javascript.js"></script>
 	</head>
 		<body>
-			<div class="main">
+			
 				<div class="header" style="background-color:black">
 						<div class="bottem" style="background-color:black">
 							<a href="index.html">Home</a>
@@ -18,78 +20,98 @@
 						</div>
 				</div>
 					<div class="header"style="background:linear-gradient(to right,red,orange,yellow,green,blue,indigo,violet);">
-						<h1><center>VISUAL MEDIA</center></h1>
+						<h2><center>VISUAL MEDIA</center></h2>
 					</div>
-					<div class="content">
-     					<div class="inside">
+					<div class="inside">
+     					
      						<form action="signin.html">
 							<h3><center>Create your profile</center></h3>
+						
 								<div class="left">
-									  Name
+									  First Name
 									</div>
 									<div class="right">
-									  <input type="text"required>
-								</div><br>
-								<div class="left">
-									Gender
+									  <input type="text"id="uname"placeholder="Name">
 								</div>
+								<div class="left">
+								Last Name
+								</div>
+								<div class="right">
+								<input type="text"id="lname">
+								</div>
+								<div class="left">
+									E-mail
+								</div>
+								<div class="right">
+									<input type="email"id="email">
+								</div>
+								<div class="left">
+									Password
+								</div>
+								<div class="right">
+									<input type="password" id="password">
+								</div>
+								<div class="left">
+									Confirm password
+								</div>
+								<div class="right">
+									<input type="password"id="cpassword">
+								</div>
+								
+								<div class="left"> Gender</div>
 								<div class="right">
 								<input type="radio"name="sex"id="male"value="male">
-									<label for="male">male</label>
+									<label for="male">Male</label>
 									<input type="radio"id="female"value="female">
-									<label for="female">female</label>
+									<label for="female">Female</label>
 		
-								</div><br>
-								<div class="left">
-									languages
 								</div>
+								<div class="left">Location</div>
 								<div class="right">
-								<select>
-									<option value="english">english</option>
-									<option value="malayalam">malayalam</option>
-									<option vaue="hindi">hindi</option>
+								<select id="selection">
+									<option value="0">--Select Location--</option>
+									<option value="1">kerala</option>
+									<option value="2">Tmailnadu</option>
+									<option vaue="3">Karnadaka</option>
 									</select>
-								</div><br>
+								</div>
+								<div class="left">Langaue</div>
+								<div class="right">
+									<input type="checkbox"id="check1">English
+									<input type="checkbox"id="check2">Hindi
+								
+								</div>
 								<div class="left">
 									Phone number
 								</div>
 								<div class="right">
-								<input type="number"required>
-								</div><br>
-								<div class="left">
-									e-mail
+								<input type="number"id="phonenum">
 								</div>
+
+								<div class="left">Pincode</div>
 								<div class="right">
-									<input type="text"required>
-								</div><br>
-								<div class="left">
-									password
+								<input type="text" id="pincode">
 								</div>
-								<div class="right">
-									<input type="password"required>
-								</div><br><br>
-								<div class="left">
-									confirm password
-								</div>
-								<div class="right">
-									<input type="password"required>
-								</div><br>
+								
+								
+								
 								<div class="reset">
-									<input type="submit"value="submit">
+									<input type="submit"value="submit" onclick="return signup()"/>
 								
 								
-									<input type="reset">
+									<input type="reset"onclick="return reset_signup()">
 								
 									
 								</div>
-						</div>
+								</form>
+					
 					</div>
 								<div class="header" style="background-color:black">
 									<h4><center>copy right@2014</center></h4>
 								</div>
 		
 		
-			</div>
+			
 	
 	</body>
 </html>
